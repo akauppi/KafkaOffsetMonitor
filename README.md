@@ -5,9 +5,9 @@ Kafka Offset Monitor
 
 This is an app to monitor your kafka consumers and their position (offset) in the queue.
 
-You can see the current consumer groups, for each group the topics that they are consuming and the position of the group in each topic queue. This is useful to understand how quick you are consuming from a queue and how fast the queue is growing. It allows for debuging kafka producers and consumers or just to have an idea of what is going on in  your system.
+You can see the current consumer groups, for each group the topics that they are consuming and the position of the group in each topic queue. This is useful to understand how quick you are consuming from a queue and how fast the queue is growing. It allows for debugging kafka producers and consumers or just to have an idea of what is going on in  your system.
 
-The app keeps an history of queue position and lag of the consumers so you can have an overview of what has happened in the last days.
+The app keeps a history of queue position and lag of the consumers so you can have an overview of what has happened in the last days.
 
 Here are a few screenshots:
 
@@ -30,7 +30,7 @@ Offset Types
 ===========
 
 Kafka is flexible on how the offsets are managed. Consumer can choose arbitrary storage and format to persist offsets.  KafkaOffsetMonitor currently 
-supports following popular storage formats
+supports following popular storage formats:
 
 * zookeeper built-in high-level consumer (based on Zookeeper)
 * kafka built-in offset management API (based on Kafka internal topic)
